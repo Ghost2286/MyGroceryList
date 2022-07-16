@@ -2,26 +2,22 @@
 <html>
 	<head>
 		<title>My Grocery List</title>
-		<link rel="stylesheet" href="reset.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com"/> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;200;400&display=swap" rel="stylesheet"/>
 		<link rel="stylesheet" href="style.css"/>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="module" src="script.js" defer></script>
 	</head>
 	<body>
 	<h1 class="title">My Grocery List </h1>
-	<form>
+    <form class="newGroceryform">
 	<input id="newGrocery" autocomplete="off"  type="text" placeholder="add an item to your list" />
-	<button id="addBtn" type="submit" >add</button>
-	</form class="newGroceryform">
-	<ul id="groceryList">
-		<li class="groceryItem">Chips</li>
-		<li class="groceryItem">Sodas</li>
-		<li class="groceryItem">Steaks</li>
-	</ul>
+	<button id="addBtn" type="submit" >Add</button>
+	</form>
+	<ul id="groceryList"></ul>
 		
 	
 	</body>
