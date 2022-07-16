@@ -25,7 +25,7 @@ align-items: center;
     font-size: 4em;
     font-weight: lighter;
     letter-spacing: 0.05em;
-    color: var(--accent);
+    color: var(--redish);
 }
 .newGroceryform {
     display: flex;
@@ -39,8 +39,8 @@ align-items: center;
     border-radius: 0.25em 0 0 0.25em;
 }
 #addBtn {
-    background-color: var(--accent);
-    color: var(--background);
+    background-color: var(--background);
+    color: var(--redish);
     padding: 0.5em;
     font-size: 0.5em;
     font-weight: bold;
@@ -51,7 +51,7 @@ align-items: center;
 
 }
 #addBtn:hover {
-    background-color: var(--purplish);
+    background-color: var(--orangish);
 }
 #groceryList {
     display: flex;
@@ -72,6 +72,7 @@ align-items: center;
     padding: 0.5em;
     border-radius: 0.25em;
     text-align: center;
+    cursor: pointer;
 }
 .groceryItem:hover {
     background-color: var(--purplish);

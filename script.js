@@ -10,8 +10,13 @@ const createGroceryElement =  grocery => {
     const groceryElement = document.createElement('li')
     groceryElement.innerText= grocery.value
     groceryElement.classList.add('groceryItem')
+    groceryElement.addEventListener('click', () => {
+    groceryElement.remove()
+    db.delete(grocery.key)
+    confetti({ particleCount: 300, spread: 1000, origin: {y: 1 }})
+     })
     return groceryElement
-}
+    }
 const addGrocery = newGrocery => {
     groceryList.appendChild(createGroceryElement(newGrocery))
 
